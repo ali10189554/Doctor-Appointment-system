@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 text-center offset-md-3 mt-5">
+      <mat-card>
+        <div class="text-center">
+          <!-- <mat-icon class="mb-3">login</mat-icon> -->
+          <img class="col-md-2" src="../../../assets/feedback.png" alt="" />
+        </div>
+        <h1 class="text-center">Your Feedback .. Thank You</h1>
+        <form >
+          <mat-form-field class="w-75" appearance="outline">
+            <mat-label>User Name</mat-label>
+            <input
+              name="username"
+              matInput
+              required
+            />
+          </mat-form-field>
+          <mat-form-field class="w-75" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input
+              name="email"
+              type="email"
+              matInput
+              required
+            />
+          </mat-form-field>
+
+           <!-- <mat-form-field class="w-75" appearance="outline">
+            <mat-label  for="exampleFormControlTextarea1">Admin Key</mat-label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </mat-form-field> -->
+
+          <div class="form-group">
+            <!-- <label for="exampleFormControlTextarea1">Your Feedback</label> -->
+            <!-- <mat-label>Write Your Feedback</mat-label> -->
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Your Feedback Here*"></textarea>
+          </div>
+
+          <div class="mt-2">
+            <button
+              style="border-radius: 50px"
+              type="submit"
+              mat-raised-button
+              color="black"
+            >
+              Submit
+            </button>
+            <button
+              style="border-radius: 50px;margin-top: 15px;"
+              type="reset"
+              mat-raised-button
+              color="black"
+              class="mx-2"
+            >
+              Reset
+            </button>
+          </div>
+
+          <!-- <div class="mt-3">
+            <a style="border-radius: 50px" mat-raised-button (click)="user()"
+              >USER</a>
+            <a
+              style="border-radius: 50px"
+              mat-raised-button
+              class="mx-2"
+              (click)="admin()"
+              >ADMIN</a>
+          </div> -->
+          <br />
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>

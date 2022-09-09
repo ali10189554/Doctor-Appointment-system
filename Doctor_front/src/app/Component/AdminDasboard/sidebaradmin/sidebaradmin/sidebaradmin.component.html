@@ -1,0 +1,56 @@
+<!-- <div class="row mt-3 aa">
+    <div class="col-md-2"></div>
+    <div class="col-md-1">
+       <a [routerLink]="'faq'">Home</a>
+    </div>
+    <div class="col-md-1">
+        <a [routerLink]="'/admin/manageUsers'">Manage Users</a>
+    </div>
+    <div class="col-md-2 text-center">
+        <a [routerLink]="'/admin/managebooking'">Manage Booking</a>
+    </div>
+    <div class="col-md-1">
+        <a [routerLink]="'/admin/members'">Members</a>
+    </div>
+    <div class="col-md-2 text-center">
+        <a [routerLink]="'/admin/changepassword'">Change Password</a>
+    </div>
+    <div class="col-md-1">
+        <a (click)="logout()">LogOut</a>
+    </div>
+    <div class="col-md-2"></div>
+</div> -->
+<!--           mine side bar -->
+<mat-card class="mt-4" style="background-color: white;">
+  <mat-action-list>
+    <div>
+      <button class="but" mat-list-item routerLink="/home">
+        <mat-icon>home</mat-icon> Home
+    </button>
+
+    <button class="but" mat-list-item routerLink="/admin/manageUsers">
+        <mat-icon>account_circle</mat-icon> Users List
+    </button>
+
+    <button class="but" mat-list-item routerLink="/admin/managebooking">
+        <mat-icon>book_online</mat-icon> Manage Appointment
+    </button>
+
+    <button class="but" mat-list-item routerLink="/admin/members">
+        <mat-icon>visibility</mat-icon>Admins Members
+    </button>
+<!--
+    <button class="but" mat-list-item routerLink="/user/feedback">
+        <mat-icon>chat</mat-icon>Feedback
+    </button> -->
+
+    <button class="but" mat-list-item routerLink="/admin/changepassword">
+        <mat-icon>settings</mat-icon> Change Password
+    </button>
+
+    <button class="but" mat-list-item (click)="logout()">
+        <mat-icon>logout</mat-icon> LogOut
+    </button>
+    </div>
+  </mat-action-list>
+</mat-card>

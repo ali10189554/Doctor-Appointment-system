@@ -1,0 +1,78 @@
+<div class="row mt-11">
+  <div class="col-md-12 mt-5">
+
+    <mat-card>
+      <div class="container text-center" style="margin-bottom: 15px;">
+        <img style="max-width: 10%;" src="../../../assets/userlist.png" alt="" />
+      </div>
+      <!-- <h1 class="text-left" style="font-weight: bolder;">Users List</h1> -->
+
+      <div class="row mt-10" style="color:black ;font-weight:bolder">
+        <div class="col-md-1 ">
+          <h1>Id</h1>
+        </div>
+        <div class="col-md-2 ">
+          <h1>User Name</h1>
+        </div>
+
+        <div class="col-md-2 ">
+          <h1>First Name</h1>
+        </div>
+
+        <div class="col-md-2 ">
+          <h1>Last Name</h1>
+        </div>
+
+        <div class="col-md-2">
+          <h1>Email</h1>
+        </div>
+
+        <div class="col-md-1 ">
+          <h1>Phone</h1>
+        </div>
+
+        <div class="col-md-2">
+          <h1>Update - Delete</h1>
+        </div>
+
+
+      </div>
+<hr>
+
+      <div *ngFor="let u of users" class="row">
+
+        <div class="col-md-1">
+          <h4>{{u.id}}</h4>
+        </div>
+
+        <div class="col-md-2">
+          <h4>{{u.username}}</h4>
+        </div>
+
+        <div class="col-md-2 ">
+          <h4>{{u.firstName}}</h4>
+        </div>
+
+        <div class="col-md-2 ">
+          <h4>{{u.lastName}}</h4>
+        </div>
+
+        <div class="col-md-2 ">
+          <h4>{{u.email}}</h4>
+        </div>
+
+        <div class="col-md-1 ">
+          <h4>{{u.phone}}</h4>
+        </div>
+
+        <div class="col-md-2 text-center ">
+          <button style="margin-right: 10px;" [routerLink]="'/admin/update/' + u.id" type="submit" mat-raised-button color="black">Update</button>
+          <button [routerLink]="'/admin/delete/'+u.id" type="submit" mat-raised-button color="black">Delete</button>
+          <!-- <a [routerLink]="'/admin/update/' + u.id"><mat-icon fontIcon="add_circle"></mat-icon></a>
+                <a><mat-icon fontIcon="process_chart"></mat-icon></a>
+                <a [routerLink]="'/admin/delete/'+u.id"><mat-icon fontIcon="close"></mat-icon></a> -->
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="container-fluid cc">
+
+    <div class="row">
+        <div class="col-md-6 text-center offset-md-3 mt-5">
+            <mat-card class="mt">
+              <div class="container text-center">
+                <img style="max-width: 40%;" src="../../../assets/signup.png" alt="" />
+              </div>
+                <h1 class="text-center login"><span style="font-weight:bolder ; color: black;">Admin</span> Login Here !!</h1>
+                <form (ngSubmit)="formSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Admin username</mat-label>
+                        <input
+                        [(ngModel)]="loginData.username"
+                        name="username" matInput required />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input
+                        [(ngModel)]="loginData.password" name="password"
+                        type="password" matInput required />
+                    </mat-form-field>
+
+
+                    <div class="mt-2">
+
+                        <button type="submit"  mat-raised-button color="black">Login</button>
+                        <button type="reset" mat-raised-button color="black" class="mx-2">Reset</button>
+
+                    </div>
+
+                    <div class="mt-3">
+                        <a mat-button (click)="user()">USER</a>
+                        <a mat-button (click)="admin()">ADMIN</a>
+                    </div>
+
+
+                </form>
+            </mat-card>
+        </div>
+    </div>
+</div>
